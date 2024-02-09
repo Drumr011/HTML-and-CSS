@@ -1,0 +1,542 @@
+body{background-color: black;}
+.circle{
+    border-radius: 50%;
+    margin:auto;
+    display: inline-flex;
+    align-items: center;
+}
+.big{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    box-shadow: 0px 0px 10px black;
+    position: absolute;
+    top: 10%;
+    left: 10%
+}
+.medium{
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(yellow 10%,gray 60%);
+    box-shadow: 0px 0px 10px yellow;
+    transform-origin: center;
+    animation: loading 2s infinite linear
+}
+.small{
+    width: 85px;
+    height: 85px;
+    background-color: black;
+
+}
+.dot{
+    width: 15px;
+    height: 15px;
+    background-color: yellow;
+    box-shadow: 0px 0px 10px yellow;
+    border: 1px rgb(164, 164, 4) solid;
+    position: relative;
+    left: 44px;
+
+}
+@keyframes loading{
+    0%{transform: rotate(0deg);}
+    50%{transform: rotate(180deg);}
+    100%{transform: rotate(360deg);}
+}
+/*-------------------------------------*/
+/*-------------------------------------*/
+.border-test{
+    width: 0px;
+    height: 0px;
+    border-bottom: 90px red solid;
+    border-top: 10px blue solid;
+    border-left: 50px green solid;
+    border-right: 50px yellow solid;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    animation: rotation 5s infinite linear 
+}
+@keyframes rotation{
+    0%{border-bottom: 90px red solid;
+        border-top: 10px blue solid;
+        border-left: 50px green solid;
+        border-right: 50px yellow solid;
+        transform: rotate(0deg);    
+    }
+
+    6.25%{border-bottom: 87px red solid;
+        border-top: 13px blue solid;
+        border-left: 35px green solid;
+        border-right: 65px yellow solid;
+        transform: rotate(22.25deg);    
+    }
+
+    12.5%{border-bottom: 79px red solid;
+        border-top: 21px blue solid;
+        border-left: 21px green solid;
+        border-right: 79px yellow solid;
+        transform: rotate(45deg);  
+    }
+
+    18.75%{border-bottom: 65px red solid;
+        border-top: 35px blue solid;
+        border-left: 13px green solid;
+        border-right: 87px yellow solid;
+        transform: rotate(67.5deg);    
+    }
+
+    25%{border-bottom: 50px red solid;
+        border-top: 50px blue solid;
+        border-left: 10px green solid;
+        border-right: 90px yellow solid;
+        transform: rotate(90deg);   
+    }
+
+    31.25%{border-bottom: 35px red solid;
+        border-top: 65px blue solid;
+        border-left: 13px green solid;
+        border-right: 87px yellow solid;
+        transform: rotate(112.5deg);    
+    }
+
+    37.5%{border-bottom: 21px red solid;
+        border-top: 79px blue solid;
+        border-left: 21px green solid;
+        border-right: 79px yellow solid;
+        transform: rotate(135deg);  
+    }
+
+    43.75%{border-bottom: 13px red solid;
+        border-top: 87px blue solid;
+        border-left: 35px green solid;
+        border-right: 65px yellow solid;
+        transform: rotate(157.5deg);    
+    }
+
+    50%{border-bottom: 10px red solid;
+        border-top: 90px blue solid;
+        border-left: 50px green solid;
+        border-right: 50px yellow solid;
+        transform: rotate(180deg);   
+    }
+
+    56.25%{border-bottom: 13px red solid;
+        border-top: 87px blue solid;
+        border-left: 65px green solid;
+        border-right: 35px yellow solid;
+        transform: rotate(202.5deg);    
+    }
+
+    62.5%{border-bottom: 21px red solid;
+        border-top: 79px blue solid;
+        border-left: 79px green solid;
+        border-right: 21px yellow solid;
+        transform: rotate(225deg);
+    }
+
+    68.75%{border-bottom: 35px red solid;
+        border-top: 65px blue solid;
+        border-left: 87px green solid;
+        border-right: 13px yellow solid;
+        transform: rotate(247.5deg);    
+    }
+
+    75%{border-bottom: 50px red solid;
+        border-top: 50px blue solid;
+        border-left: 90px green solid;
+        border-right: 10px yellow solid;
+        transform: rotate(270deg);   
+    }
+
+    81.25%{border-bottom: 65px red solid;
+        border-top: 35px blue solid;
+        border-left: 87px green solid;
+        border-right: 13px yellow solid;
+        transform: rotate(292.5deg);    
+    }
+
+    87.5%{border-bottom: 79px red solid;
+        border-top: 21px blue solid;
+        border-left: 79px green solid;
+        border-right: 21px yellow solid;
+        transform: rotate(315deg);
+    }
+
+    93.75%{border-bottom: 87px red solid;
+        border-top: 13px blue solid;
+        border-left: 65px green solid;
+        border-right: 35px yellow solid;
+        transform: rotate(337.5deg);    
+    }
+
+    100%{border-bottom: 90px red solid;
+        border-top: 10px blue solid;
+        border-left: 50px green solid;
+        border-right: 50px yellow solid;
+        transform: rotate(360deg);   
+    }
+}
+
+/*-------------------------------------*/
+/*-------------------------------------*/
+.pacman{
+    width: 0px;
+    height: 0px;
+    border-bottom: 50px yellow solid;
+    border-top: 50px yellow solid;
+    border-left: 50px yellow solid;
+    border-right: 50px transparent solid;
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    left: 70%
+}
+.pacman:hover{
+    cursor: none;
+}
+.mouth-top{
+    width: 0px;
+    height: 0px;
+    border-bottom: 50px transparent solid;
+    border-top: 50px yellow solid;
+    border-left: 50px transparent solid;
+    border-right: 50px transparent solid;
+    border-radius: 50%;
+    position: relative;
+    top:-49px;
+    left:-50px;
+    animation: top-mouth 0.5s infinite linear
+}
+@keyframes top-mouth{
+    0%{transform: rotate(0deg)}
+    50%{transform: rotate(50deg)}
+    100%{transform: rotate(0deg)}
+}
+.mouth-bottom{
+    width: 0px;
+    height: 0px;
+    border-bottom: 50px yellow solid;
+    border-top: 50px transparent solid;
+    border-left: 50px transparent solid;
+    border-right: 50px transparent solid;
+    border-radius: 50%;
+    position: relative;
+    top: -149px;
+    left:-50px;
+    animation: bottom-mouth 0.5s infinite linear
+}
+@keyframes bottom-mouth{
+    0%{transform: rotate(0deg)}
+    50%{transform: rotate(-50deg)}
+    100%{transform: rotate(0deg)}
+}
+/*-------------------------------------*/
+/*-------------------------------------*/
+.flag{
+    height: 120px;
+    width: 200px;
+    background: linear-gradient(black 33%,white 34%,white 66%,green 67%,green 100%);
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+.flag-accent{
+    width: 0px;
+    height: 0px;
+    border-bottom: 60px transparent solid;
+    border-top: 60px transparent solid;
+    border-left: 80px red solid;
+    border-right: 50px transparent solid;
+}
+
+/*-------------------------------------*/
+/*-------------------------------------*/
+
+.horizontal-loader{
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+}
+.ball{
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(0px);
+}
+.ball:nth-of-type(1){
+    background-color:rgb(219, 218, 251);
+    animation: ball1 5s infinite ease-in-out;
+}
+.ball:nth-of-type(2){
+    background-color:rgb(186, 186, 255);
+    animation: ball2 5s infinite ease-in-out;
+}
+.ball:nth-of-type(3){
+    background-color:rgb(121, 121, 255);
+    animation: ball3 5s infinite ease-in-out;
+}
+.ball:nth-of-type(4){
+    background-color:rgb(59, 59, 255);
+    animation: ball4 5s infinite ease-in-out;
+}
+.ball:nth-of-type(5){
+    background-color:blue;
+    animation: ball5 5s infinite ease-in-out;
+}
+
+@keyframes ball1{
+    0%{transform: translate(0px);
+        z-index: 1;}
+    30%{transform: translate(250px);
+        z-index: 5;}
+    50%{transform: translate(250px);}
+    80%{transform: translate(0px);}
+    100%{transform: translate(0px);}
+}
+@keyframes ball2{
+    0%{transform: translate(0px);
+        z-index: 2;}
+    5%{transform: translate(0px);}
+    35%{transform: translate(250px);
+        z-index: 4;}
+    55%{transform: translate(250px);}
+    85%{transform: translate(0px);}
+    100%{transform: translate(0px);}
+}
+@keyframes ball3{
+    0%{transform: translate(0px);
+        z-index: 3;}
+    10%{transform: translate(0px);}
+    40%{transform: translate(250px);}
+    60%{transform: translate(250px);}
+    90%{transform: translate(0px);}
+    100%{transform: translate(0px);}
+}
+@keyframes ball4{
+    0%{transform: translate(0px);
+        z-index: 4;}
+    15%{transform: translate(0px);}
+    45%{transform: translate(250px);
+        z-index: 2;}
+    65%{transform: translate(250px);}
+    95%{transform: translate(0px);}
+    100%{transform: translate(0px);}
+}
+@keyframes ball5{
+    0%{transform: translate(0px);
+        z-index: 5;}
+    20%{transform: translate(0px);}
+    50%{transform: translate(250px);
+        z-index: 1;}
+    70%{transform: translate(250px);}
+    100%{transform: translate(0px);}
+}
+
+/*-------------------------------------*/
+/*-------------------------------------*/
+
+.joycon{
+    /*2.841*/
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(
+    90deg,
+    orange 0%,
+    orange 90%,
+    rgb(189, 114, 45));
+
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    z-index:-1
+}
+
+.top{
+    width: 100px;
+    height: 100px;
+    border-top-right-radius: 60%;
+    background: radial-gradient(
+        circle at bottom left,
+        orange 0%,
+        orange 64%, 
+        black 90%);
+    
+    position: absolute;
+    top: -80px;
+    z-index: 0;
+}
+.bottom{
+    width: 100px;
+    height: 100px;
+    border-bottom-right-radius: 60%;
+    background: radial-gradient(
+        circle at top left, 
+        orange 0%,
+        orange 64%, 
+        black 90%);
+    position: absolute;
+    bottom: -100px;
+}
+
+.button{
+    height: 21px;
+    width: 21px;
+    border: black 1px solid;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+}
+.X{ 
+    left: 40%;
+    top: -36%;
+    background-color: black;
+}
+.Y{ 
+    left: 18%;
+    top: -15%;
+    background-color: black;
+}
+.A{ 
+    left: 62%;
+    top: -15%;
+    background-color: black;
+}
+.B{ 
+    left: 40%;
+    top: 6%;
+    background-color: black;
+}
+.X, .Y, .A, .B{
+    box-shadow: 2px 2px 3px rgb(17, 17, 17);
+} 
+.X:active{top:-35%;box-shadow: 1px 2px 2px rgb(17, 17, 17);}
+.Y:active{top:-14.5%;box-shadow: 1px 2px 2px rgb(17, 17, 17);}
+.A:active{top:-14.5%;box-shadow: 1px 2px 2px rgb(17, 17, 17);}
+.B:active{top:7%;}
+
+.shoulder{
+    width: 0;
+    height: 0;
+    border-bottom: 50px transparent solid;
+    border-top: 50px gray solid;
+    border-left: 50px transparent solid;
+    border-right: 70px transparent solid;
+    position: absolute;
+    border-radius: 50%;
+    top:-81%;
+    left: -12%;
+    z-index: -1;
+    transform: rotate(32deg);
+}
+.start{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: -60%;
+    left: 10%;
+}
+.rectangle{
+    width: 20px;
+    height: 6px;
+    background-color: black;
+    border-radius: 10%;
+}
+.vertical{
+    transform: rotate(90deg);
+    position: absolute;
+    top:7px;
+    box-shadow: 2px -2px 2px rgb(25, 25, 25);
+}
+.horizontal{
+    position: absolute;
+    top:7px;
+    box-shadow: 2px 2px 2px rgb(25, 25, 25);
+}
+.joystick{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: black;
+
+    position: absolute;
+    top: 50%;
+    left: 30%
+}
+.joystick-inner{
+    height: 38px;
+    width: 38px;
+    background-color: black;
+    border: 1px gray solid;
+    border-radius: 50%;
+}
+.rail{
+    height: 230px;
+    width: 20px;
+    background-color: transparent;
+
+    position: absolute;
+    top: -60px;
+    left: -10px
+}
+.rail-inner{
+    height: 210px;
+    width: 5px;
+    background-color: gray;
+
+    position: absolute;
+    left: 5px;
+}
+.rail-outer{
+    height: 230px;
+    width: 5px;
+    background-color: rgb(141, 141, 141);
+    border-radius: 11%;
+
+    position: absolute;
+}
+.home{
+    background-color: rgb(99, 99, 99);
+    position: absolute;
+    top: 120%;
+    left: 24%;
+}
+.home-inner{
+    height: 17px;
+    width: 17px;
+    background-color: black;
+}
+.body{
+    height: 8px;
+    width: 8px;
+    background-color: rgb(38, 38, 38);
+
+    position: absolute;
+    top: 8px;
+    left: 6px;
+}
+.roof{
+    width: 0px;
+    height: 0px;
+    border-bottom: 5px rgb(38, 38, 38) solid;
+    border-top: 0px transparent solid;
+    border-left: 8px transparent solid;
+    border-right: 8px transparent solid;
+
+    position: absolute;
+    top: 4px
+}
+.window{
+    height: 4px;
+    width: 4px;
+    background-color: rgb(28, 28, 28);
+
+    position: absolute;
+    top: 30%;
+    left: 25%
+}
